@@ -29,6 +29,11 @@ def load_backup():
     return data
 
 def save_backup(data):
+  '''
+  Function Saves Master Backup list into 'Backup.dat' File
+
+  data = Master Backup list
+  '''
   with open("Backup.dat", "wb") as file:
       pkl.dump(data, file)
 
